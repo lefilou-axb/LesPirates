@@ -1,6 +1,8 @@
 package jeu;
 import java.security.SecureRandom;
 
+import emplacements.Case;
+
 public class PlateauJeu {
 	private int nbCases = 30;
 	private int nbCasesSpeciales;
@@ -14,6 +16,10 @@ public class PlateauJeu {
 	}
 	
 	public void ajouterCaseSpeciale(Case caseSpeciale, int numero) {
-		
+		if(nbCasesSpeciales == nbCases) {
+			Interface.erreur("Impossible de rajouter plus de case spéciale, désolé mousallion.")
+		} else {
+			nbCasesSpeciales += 1;
+		}
 	}
 }
