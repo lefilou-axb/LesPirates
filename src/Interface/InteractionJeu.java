@@ -7,8 +7,8 @@ public class InteractionJeu implements IInteraction {
 	@Override
 	public void afficherContexte() {
 		System.out.println("Salut mousaillon ! Bienvenue sur la mythique île des pirates 💀. Tu tombes à pic "
-				+ "pour l'annuel combat des pirates ! \n\n Le but est très simple ! Il faut être le premier à"
-				+ " atteindre le bout de l'île. \n\n Comment t'appelles-tu ?");
+				+ "pour l'annuel combat des pirates ! \n\nLe but est très simple ! Il faut être le premier à"
+				+ " atteindre le bout de l'île.\n\n");
 	}
 	
 	@Override
@@ -22,7 +22,7 @@ public class InteractionJeu implements IInteraction {
 	}
 	
 	@Override
-	public void erreur(String message) {
+	public void erreurCase(String message) {
 		System.out.println("Impossible : " + message);	
 	}
 }
