@@ -2,7 +2,7 @@ package Interface;
 
 import personnages.Joueur;
 
-public class AffichageJeu implements IAffichage {
+public class InteractionJeu implements IInteraction {
 	
 	@Override
 	public void afficherContexte() {

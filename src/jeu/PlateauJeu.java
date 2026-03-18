@@ -1,7 +1,7 @@
 package jeu;
 import java.security.SecureRandom;
 
-import Interface.AffichageJeu;
+import Interface.InteractionJeu;
 import emplacements.Case;
 
 public class PlateauJeu {
@@ -9,7 +9,7 @@ public class PlateauJeu {
 	private int nbCasesSpeciales;
 	private int[] resultatDes;
 	private SecureRandom random;
-	
+	InteractionJeu affichage = new InteractionJeu();
 	
 	public int lancerDes(){
 		random = new SecureRandom();
@@ -19,7 +19,7 @@ public class PlateauJeu {
 	
 	public void ajouterCaseSpeciale(Case caseSpeciale, int numero) {
 		if(nbCasesSpeciales == nbCases) {
-			AffichageJeu.erreur("Impossible de rajouter plus de case spéciale, désolé moussaillon.");
+			affichage.erreur("Impossible de rajouter plus de case spéciale, désolé moussaillon.");
 		} else {
 			nbCasesSpeciales += 1;
 		}
