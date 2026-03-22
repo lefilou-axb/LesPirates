@@ -17,6 +17,17 @@ public class InteractionJeu implements IInteraction {
 	}
 	
 	@Override
+	public void demanderNom(int numeroJoueur) {
+		System.out.println("Entrez votre nom joueur " + numeroJoueur + " : ");
+	}
+	
+	public void choixPirate() {
+		System.out.println("Veuillez choisir votre pirate en sélectionnant le numéro : "
+				+ "1 - Capitaine Crochet, 2 - Monkey D.Luffy, 3 - Jack Sparrow, "
+				+ "4 - Flameheart, 5 - Victor Macbernik");
+	}
+	
+	@Override
 	public void decrireCase(String descriptionCase) {
 		System.out.println("Cette case spéciale permet "+ descriptionCase);
 	}
